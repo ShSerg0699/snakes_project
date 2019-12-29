@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nsu.shserg.controllers.JoinMenuController">
+   <children>
+      <VBox layoutY="-2.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="600.0" text="Snakes" textFill="#2bc54d" translateY="10.0">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="72.0" />
+               </font>
+            </Label>
+            <ListView fx:id="announcementGame" prefHeight="194.0" prefWidth="600.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0" translateY="20.0">
+               <children>
+                  <TextField fx:id="name" prefHeight="25.0" prefWidth="125.0" promptText="type you name" translateX="30.0" translateY="12.0" />
+                  <Button fx:id="update" mnemonicParsing="false" prefHeight="50.0" prefWidth="125.0" text="Update" textFill="#2bc54d" translateX="40.0">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="joinGame" mnemonicParsing="false" prefHeight="50.0" prefWidth="140.0" text="Join game" textFill="#2bc54d" translateX="50.0">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="back" mnemonicParsing="false" prefHeight="50.0" prefWidth="140.0" text="Back" textFill="#2bc54d" translateX="60.0">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

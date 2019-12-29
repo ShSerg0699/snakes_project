@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nsu.shserg.controllers.CreateMenuController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="600.0" text="Snakes" textFill="#2bc54d" translateY="10.0">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="72.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="50.0" prefWidth="200.0" translateY="10.0">
+               <children>
+                  <Label text="Width:" textFill="#2bc54d" translateX="20.0">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="18.0" />
+                     </font></Label>
+                  <TextField fx:id="width" prefWidth="100.0" text="40" translateX="25.0" />
+                  <Label text="Height:" textFill="#2bc54d" translateX="40.0">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="18.0" />
+                     </font></Label>
+                  <TextField fx:id="height" prefWidth="100.0" text="30" translateX="45.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label text="Food static:" textFill="#2bc54d" translateX="20.0">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="18.0" />
+                     </font></Label>
+                  <TextField fx:id="foodStatic" prefWidth="100.0" text="1" translateX="25.0" />
+                  <Label text="Food per player:" textFill="#2bc54d" translateX="40.0">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="18.0" />
+                     </font></Label>
+                  <TextField fx:id="foodPerPlayer" prefWidth="100.0" text="1" translateX="45.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label text="State delay ms:" textFill="#2bc54d" translateX="20.0">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="18.0" />
+                     </font></Label>
+                  <TextField fx:id="stateDelayMs" prefWidth="100.0" text="1000" translateX="25.0" />
+                  <Label text="Dead food prob:" textFill="#2bc54d" translateX="40.0">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="18.0" />
+                     </font></Label>
+                  <TextField fx:id="deadFoodProb" prefWidth="100.0" text="0.1" translateX="45.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label text="Ping delay ms:" textFill="#2bc54d" translateX="20.0">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="18.0" />
+                     </font></Label>
+                  <TextField fx:id="pingDelayMs" prefWidth="100.0" text="100" translateX="25.0" />
+                  <Label text="Node timeout ms:" textFill="#2bc54d" translateX="40.0">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="18.0" />
+                     </font></Label>
+                  <TextField fx:id="nodeTimeoutMs" prefWidth="100.0" text="800" translateX="45.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" translateY="10.0">
+               <children>
+                  <TextField fx:id="name" promptText="type your name" translateX="50.0" translateY="12.0" />
+                  <Button fx:id="setConfig" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Set configuration" textFill="#2bc54d" translateX="70.0">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="back" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Back" textFill="#2bc54d" translateX="90.0">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="18.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

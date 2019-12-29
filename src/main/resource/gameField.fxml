@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nsu.shserg.controllers.GameController">
+   <children>
+      <HBox prefHeight="600.0" prefWidth="1000.0">
+         <children>
+            <Pane focusTraversable="true" prefHeight="600.0" prefWidth="600.0">
+               <children>
+                  <Canvas fx:id="gameField" focusTraversable="true" height="600.0" width="600.0" />
+               </children>
+            </Pane>
+            <VBox prefHeight="600.0" prefWidth="289.0" translateX="10.0">
+               <children>
+                  <HBox prefHeight="237.0" prefWidth="400.0">
+                     <children>
+                        <TableView fx:id="rating" focusTraversable="false" prefHeight="170.0" prefWidth="221.0" translateX="20.0" translateY="20.0">
+                          <columns>
+                              <TableColumn fx:id="name" editable="false" prefWidth="119.0" text="Name" />
+                              <TableColumn fx:id="score" editable="false" prefWidth="102.5999755859375" text="Score" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="200.0" prefWidth="281.0">
+                     <children>
+                        <Label text="Current Game" textFill="#2bc54d" translateX="20.0" translateY="50.0">
+                           <font>
+                              <Font name="Book Antiqua Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Button fx:id="newGameButton" focusTraversable="false" mnemonicParsing="false" prefHeight="50.0" prefWidth="116.0" text="New game" textFill="#2bc54d" translateX="20.0" translateY="30.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="exitButton" focusTraversable="false" mnemonicParsing="false" prefHeight="50.0" prefWidth="186.0" text="Exit to main menu" textFill="#2bc54d" translateX="20.0" translateY="50.0">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
